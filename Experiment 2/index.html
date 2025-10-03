@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard" data-theme="light">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="dashboard-header">
+                <h1>Admin Dashboard</h1>
+                <button id="theme-toggle">Toggle Theme</button>
+            </header>
+            <section class="dashboard-main">
+                <div class="card">
+                    <h3>Welcome!</h3>
+                    <p>This is your dashboard. Use the sidebar to navigate.</p>
+                </div>
+                <div class="card stats">
+                    <h3>Statistics</h3>
+                    <ul>
+                        <li>Users: <span>120</span></li>
+                        <li>Reports: <span>15</span></li>
+                        <li>Active Sessions: <span>8</span></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
