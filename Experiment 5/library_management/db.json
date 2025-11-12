@@ -1,0 +1,25 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "year": 2008,
+      "isbn": "978-0132350884"
+    },
+    {
+      "id": "2",
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt",
+      "year": 1999,
+      "isbn": "978-0201616224"
+    },
+    {
+      "id": "001f",
+      "title": "Clean Code",
+      "author": "my",
+      "year": "2009",
+      "isbn": "1bn45"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+:root {
+  --primary: #3498db;
+  --accent: #27ae60;
+  --bg: #f7f9fb;
+  --canvas-bg: #fff;
+  --canvas-border: #dbe6ee;
+  --btn-bg: #3498db;
+  --btn-hover: #217dbb;
+  --btn-radius: 6px;
+  --shadow: 0 2px 8px rgba(44,62,80,0.08);
+  --text: #222;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.drawing-tool-app {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--canvas-bg);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drawing-tool-app h1 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.canvas-controls {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#undo-btn {
+  padding: 0.6rem 1.4rem;
+  background: var(--btn-bg);
+  color: #fff;
+  border: none;
+  border-radius: var(--btn-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+}
+
+#undo-btn:hover {
+  background: var(--btn-hover);
+  transform: translateY(-2px) scale(1.03);
+}
+
+#canvas {
+  background: var(--canvas-bg);
+  border: 2px solid var(--canvas-border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  .drawing-tool-app {
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 98vw;
+  }
+  #canvas {
+    max-width: 98vw;
+    height: 300px;
+  }
+}
